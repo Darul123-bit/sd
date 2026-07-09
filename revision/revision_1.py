@@ -1,5 +1,9 @@
 # Exercice 1
 
-#   Listes comme struyctures de données et dictionnaires comme structure de données
+#   Listes comme structures de données et dictionnaires comme structure de données
 
+chaine = input("Veuillez entre la chaine à analyser : ")
 
+chaine = chaine.lower()
+
+print(chaine)
