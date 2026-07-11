@@ -1,40 +1,18 @@
-#   Cet programme permet de saisir un nombre puis déterminer s'il appartient à un intervlle donné
+#   Evaluation de l'admissibilité d'un étudiant
 
+#   Cet programme permet de déterminer si un étudiant est élligible à une bourse ou pas
 
-print(" Intervalous ".center(30, '•'))
-print("• Ce programme te permet de  •\n• savoir si un nombre que tu •\n• auras saisi est dans un    •\n• intervalle ou pas !!       •")
-print(''.center(30, '•'))
+'''
+Les conditions sont les suivantes
 
-ordonnee = True
-while ordonnee:
-    try:
-        firstValue = int(input("Tape la première valeur : "))
-        secondValue = int(input("Tape la seconde valeur : "))
-        ordonnee = firstValue > secondValue
-        if ordonnee:
-            print("La première valeur doit être la plus petite.")
-        else:
-            break
-    except:
-        print("Warning : taper uniquement des nombres entiers !")
-        print("".center(30, '='))
+• La moyenne générale (GPA) doit être supérieur ou égale à 3.0
+• Le score du test d'aptitude doit être entre 85 et 115
+• Les heures de service communautaire doivent être au moins de 50
 
-print("• Taper une troisième valeur pour savoir s'il fait partie de l'intervalle prédéfini •")
-while True:
-    try:
-        thirdValue = int(input("·.·.·. "))
-        if thirdValue.isnumeric():
-            if thirdValue in range(firstValue, secondValue+1):
-                print("Votre valeur est bien dans notre intervalle")
-                break
-            else:
-                print("Notre valeur n'est pas l'intervalle")
-                break
-        else:
-            print("veuillez retaper la valeur.")
-
-    except TypeError: 
-        print("Please taper de vrai nombre cette fois-ci ·.·.")
+'''
 
 
 
+moyGPA = 0.0
+
+scoreTest = float(input("Entrer votre score au test d'aptitude : "))
