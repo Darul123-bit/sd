@@ -12,6 +12,31 @@ Voici-ci le barème:
 
 print(" Bienvenu(e) pour évaluer votre prime ".center(46, '•'))
 
-print("\n"*3)
+#   Un peu d'espace ici hihihi
+print("\n".center(20, '•'))
+
+heure = int(input("• Entrer votre heure total de travail : "))
+salaire = int(input("• Entrer votre salaire : "))
 
 
+if 0 < heure <= 39:
+    print("• Vous n'avez aucune prime sorry !!!")
+    print(f"• Votre salaire est donc {salaire} F CFA")
+elif 40 <= heure <= 44:
+    salaire += 0.5
+    print("• Vous avez une majoration de 50 %")
+    print(f"• Votre salaire est donc {salaire}")
+elif 45 <= heure <= 49:
+    salaire += 0.75
+    print("• Vous avez une majoration de 75 %")
+    print(f"• Votre salaire final est donc de {salaire}")
+elif heure >= 50:
+    salaire *= 2
+    print(f"• Félicitations vous avez le Jackpot\• Vous avez une majoration de 100 %")
+    print(f"• Votre salaire est {salaire}")
+else:
+    print("\n")
+    print("• ERROR •"*4)
+    print("\n")
+    print("• Tell me which kind of people are you ???\n• Just tell me \U0001F612.")
+    
