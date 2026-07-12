@@ -21,18 +21,18 @@ ticketPrice = 5000
 while restart:
     try:
         age = int(input("• Veuillez entrer votre âge : "))
-        estEtudiant = input("Êtes-vous étudiant ? O (oui) N (Non): ")
+        estEtudiant = input("• Êtes-vous étudiant ? O (oui) N (Non): ")
         estEtudiant = estEtudiant.lower()
         if estEtudiant == 'o':
             estEtudiant = True 
         else:
             estEtudiant = False
 
-        heure = int(input("Heure de la séance choisie : "))
+        heure = int(input("• Heure de la séance choisie : "))
         restart = False
 
     except:
-        print("Les informations entrer sont incorrectes")
+        print("• Les informations entrer sont incorrectes")
 
 
 
@@ -45,20 +45,20 @@ else:
         ticketPrice -= 1500
         if heure < 12:
             ticketPrice -= 1000
-            print(f"Votre ticket est à {ticketPrice}")
+            print(f"• Votre ticket est à {ticketPrice}")
         elif heure >= 20:
          
             print("Vous avez un siège premium gratuit")
-            print(f"votre ticket est à {ticketPrice}")
+            print(f"• votre ticket est à {ticketPrice}")
         else:
-            print(f"Votre ticket est à {ticketPrice}")
+            print(f"• Votre ticket est à {ticketPrice}")
     else:
         if heure < 12:
             ticketPrice -= 1000
-            print(f"Votre ticket est à {ticketPrice}")
+            print(f"• Votre ticket est à {ticketPrice}")
         elif heure >= 20:
-            print("Vous avez obtenu un billet premium gratuitement.")
-            print(f"Votre ticket est à {ticketPrice}")
+            print("• Vous avez obtenu un billet premium gratuitement.")
+            print(f"• Votre ticket est à {ticketPrice}")
 
         else:
-            print(f"Votre ticket est à {ticketPrice}")
+            print(f"• Votre ticket est à {ticketPrice}")
