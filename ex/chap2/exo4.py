@@ -32,7 +32,8 @@ while restart:
         restart = False
 
     except:
-        print("• Les informations entrer sont incorrectes")
+        print("••••••••••••••••••••••••••••••••••••••••••••")
+        print("• Les informations entrer sont incorrectes •")
 
 
 
